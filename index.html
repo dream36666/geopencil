@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geopencil - Track the Journey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>✏️ Geopencil</h1>
+        <p>Found a pencil? Log it here!</p>
+    </header>
+
+    <section id="upload-section">
+        <h2>Log a Find</h2>
+        <form id="pencilForm">
+            <input type="text" id="finderName" placeholder="Your Name" required>
+            <input type="text" id="trackingNumber" placeholder="Pencil Tracking #" required>
+            <input type="text" id="location" placeholder="Where did you find it?" required>
+            <input type="number" id="length" placeholder="Length (cm)" required>
+            
+            <label for="photo">Upload Picture:</label>
+            <input type="file" id="photo" accept="image/*" required>
+            
+            <button type="submit">Log Pencil</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <section id="gallery-section">
+        <h2>Recent Finds</h2>
+        <div id="pencil-grid">
+            </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
